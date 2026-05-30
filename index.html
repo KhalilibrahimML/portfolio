@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!-- This is the HTML5 document declaration, specifying the document type and version of HTML being used. -->
+<html lang="en">
+<!-- The root element of the HTML page, with language attribute set to English. -->
+
+<head>
+    <!-- Contains meta-information about the document, such as character set, viewport settings, and title. -->
+    <meta charset="UTF-8" />
+    <!-- Specifies the character encoding for the document as UTF-8, supporting a wide range of characters and symbols. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Makes the page responsive, setting the viewport to match the device's width and initial zoom level. -->
+    <title>Data Science & Machine Learning Portfolio</title>
+    <!-- Sets the title of the webpage, which appears in the browser tab and search engine results. -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Links an external CSS file for styling the HTML content. -->
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="nav">
+            <a class="logo" href="#">Ibrahim</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#resume">Resume</a>
+                <a class="nav-link" href="#contact">Contact</a>
+                <a class="button button-secondary download-btn" href="resume.pdf" download>Download Resume</a>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <p class="intro-label">Data Science | Machine Learning | AI</p>
+            <h1>Hi, I’m Ibrahim</h1>
+            <p class="hero-text">
+                I build advanced analytics, predictive models, and automated AI solutions that turn data into reliable
+                business decisions.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="button button-primary">View Projects</a>
+                <a href="#contact" class="button button-secondary">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about" class="section about-section">
+            <div class="section-heading">
+                <span>About Me</span>
+                <h2>Data-driven solutions with measurable impact</h2>
+            </div>
+            <p>
+                I specialize in data science and machine learning with a strong foundation in Python, statistics, model
+                deployment, and interpretability. My work includes end-to-end pipelines from data collection and feature
+                engineering to model development, evaluation, and production integration.
+            </p>
+            <div class="stats-grid">
+                <div class="stat-card" data-value="7">
+                    <h3>7+</h3>
+                    <p>Projects completed</p>
+                </div>
+                <div class="stat-card" data-value="6">
+                    <h3>6+</h3>
+                    <p>Machine learning workflows</p>
+                </div>
+                <div class="stat-card" data-value="92">
+                    <h3>92%</h3>
+                    <p>Average model performance lift</p>
+                </div>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <div class="section-heading">
+                <span>Core Skills</span>
+                <h2>Tools & techniques I use daily</h2>
+            </div>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>Machine Learning</h3>
+                    <p>Supervised & unsupervised learning, deep learning, and explainability.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Data Science</h3>
+                    <p>ETL pipelines, Data visualization, Data processing, Model creation.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Analytics</h3>
+                    <p>Statistical analysis, hypothesis testing, visualization.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Deployment</h3>
+                    <p>API development, Web Development, Software Development, and monitoring for production models.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section reveal">
+            <div class="section-heading">
+                <span>Selected Work</span>
+                <h2>Projects that demonstrate results</h2>
+            </div>
+            <div class="project-controls">
+                <button class="filter-button active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="regression">Regression</button>
+                <button class="filter-button" data-filter="classification">Classification</button>
+                <button class="filter-button" data-filter="clustering">Clustering</button>
+                <button class="filter-button" data-filter="analysis">Analysis</button>
+            </div>
+            <div class="project-grid">
+                <article class="project-card" data-category="regression">
+                    <h3>House Price Prediction</h3>
+                    <p>Designed a regression model using housing features to deliver accurate price forecasts.</p>
+                    <p class="project-meta">Python · Scikit-learn · Feature Engineering · Regression</p>
+                    <div class="project-details">Used linear regression, tree ensembles, and cross-validation to
+                        identify key value drivers and optimize predictions.</div>
+                    <button class="details-toggle" type="button">View details</button>
+                </article>
+                <article class="project-card" data-category="clustering">
+                    <h3>Customer Segmentation Clustering</h3>
+                    <p>Segmented customers using clustering to uncover distinct behavior groups for targeted campaigns.
+                    </p>
+                    <p class="project-meta">Python · K-Means · PCA · Customer Insights</p>
+                    <div class="project-details">Executed clustering analysis, cluster profiling, and visualization to
+                        support product and marketing decisions.</div>
+                    <button class="details-toggle" type="button">View details</button>
+                </article>
+                <article class="project-card" data-category="classification">
+                    <h3>Plant Disease Classifier</h3>
+                    <p>Built a deep learning classifier to identify plant diseases from leaf images.</p>
+                    <p class="project-meta">TensorFlow · CNN · Image Processing · Accuracy Tracking</p>
+                    <div class="project-details">Combined image augmentation, model tuning, and evaluation metrics to
+                        maximize detection accuracy.</div>
+                    <button class="details-toggle" type="button">View details</button>
+                </article>
+                <article class="project-card" data-category="analysis">
+                    <h3>Diabetes Data Analysis</h3>
+                    <p>Analyzed diabetes data to identify risk factors and model disease probability.</p>
+                    <p class="project-meta">Pandas · Seaborn · Logistic Regression · Insights</p>
+                    <div class="project-details">Performed EDA, correlation analysis, and model interpretation to
+                        highlight health predictors.</div>
+                    <button class="details-toggle" type="button">View details</button>
+                </article>
+                <article class="project-card" data-category="analysis">
+                    <h3>Titanic Survival Study</h3>
+                    <p>Explored survival patterns and built classification models on the Titanic dataset.</p>
+                    <p class="project-meta">Python · Feature Engineering · Decision Trees · EDA</p>
+                    <div class="project-details">Used data cleaning, feature extraction, and ensemble methods to improve
+                        survival prediction.</div>
+                    <button class="details-toggle" type="button">View details</button>
+                </article>
+                <article class="project-card" data-category="analysis">
+                    <h3>Petrol Consumption Analysis</h3>
+                    <p>Modeled petrol consumption using vehicle and economy features to support efficiency decisions.
+                    </p>
+                    <p class="project-meta">Regression · Data Visualization · Model Validation</p>
+                    <div class="project-details">Built predictive models and comparison charts to explain how engine and
+                        weight affect consumption.</div>
+                    <button class="details-toggle" type="button">View details</button>
+                </article>
+                <article class="project-card" data-category="classification">
+                    <h3>Iris Dataset Classifier</h3>
+                    <p>Classified iris species with high accuracy using classic machine learning techniques.</p>
+                    <p class="project-meta">Scikit-learn · SVM · KNN · Model Comparison</p>
+                    <div class="project-details">Executed model selection and evaluation to demonstrate robust
+                        multi-class classification performance.</div>
+                    <button class="details-toggle" type="button">View details</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section testimonials-section reveal">
+            <div class="section-heading">
+                <span>Testimonials</span>
+                <h2>Professional feedback</h2>
+            </div>
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <p>“I delivered a scalable analytics solution that immediately improved our forecasting and
+                        increased confidence across the business.”</p>
+                    <h4>Product Leader</h4>
+                    <span>Retail Analytics</span>
+                </article>
+                <article class="testimonial-card">
+                    <p>“My machine learning pipeline was robust, interpretable, and production-ready. The results spoke
+                        for themselves.”</p>
+                    <h4>Data Engineering Manager</h4>
+                    <span>Financial Services</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="resume" class="section resume-section reveal">
+            <div class="section-heading">
+                <span>Resume</span>
+                <h2>Download my resume</h2>
+            </div>
+            <p>
+                Want a detailed breakdown of my skills, experience, and projects? Download my resume to review project
+                outcomes, tech stack, and contact details.
+            </p>
+            <a href="resume.pdf" class="button button-primary" download>Download Resume (PDF)</a>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="section-heading">
+                <span>Get in Touch</span>
+                <h2>Ready to build your next data science initiative?</h2>
+            </div>
+            <p>Let’s discuss how I can help your team leverage data and AI to achieve measurable impact.</p>
+            <p class="contact-email">
+                <!-- <strong>Email:</strong> -->
+                <!-- <a href="mailto:khalilibrahimlawan49@example.com">khalilibrahimlawan49@example.com</a> -->
+            </p>
+            <a href="mailto:khalilibrahimlawan49@example.com" class="button button-primary">Email Me</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Ibrahim • Data Science & Machine Learning Portfolio</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const statCards = document.querySelectorAll('.stat-card h3');
+            const filterButtons = document.querySelectorAll('.filter-button');
+            const projectCards = document.querySelectorAll('.project-card');
+            const revealElements = document.querySelectorAll('.reveal');
+
+            const navToggle = document.querySelector('.nav-toggle');
+            const navLinks = document.getElementById('navLinks');
+            const navLinkItems = document.querySelectorAll('.nav-link');
+
+            function animateStats() {
+                statCards.forEach((stat) => {
+                    const raw = stat.parentElement.getAttribute('data-value') || stat.textContent;
+                    const target = parseInt(String(raw).replace(/[^0-9]/g, ''), 10) || 0;
+                    const duration = 1500;
+                    let start = 0;
+                    if (!target) return;
+                    const stepTime = Math.max(Math.floor(duration / target), 20);
+
+                    const counter = setInterval(() => {
+                        start += 1;
+                        stat.textContent = `${start}+`;
+                        if (start >= target) {
+                            clearInterval(counter);
+                            stat.textContent = `${target}+`;
+                        }
+                    }, stepTime);
+                });
+            }
+
+            function setActiveButton(activeButton) {
+                filterButtons.forEach((button) => button.classList.remove('active'));
+                activeButton.classList.add('active');
+            }
+
+            function filterProjects(category) {
+                projectCards.forEach((card) => {
+                    const cardCategory = card.dataset.category || 'all';
+                    const visible = category === 'all' || cardCategory === category;
+                    card.style.display = visible ? 'grid' : 'none';
+                });
+            }
+
+            filterButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    setActiveButton(button);
+                    filterProjects(button.dataset.filter);
+                });
+            });
+
+            const detailsToggleButtons = document.querySelectorAll('.details-toggle');
+            detailsToggleButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    const card = button.closest('.project-card');
+                    card.classList.toggle('open');
+                    button.textContent = card.classList.contains('open') ? 'Hide details' : 'View details';
+                });
+            });
+
+            // Mobile nav toggle
+            if (navToggle && navLinks) {
+                navToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('open');
+                });
+            }
+
+            navLinkItems.forEach((link) => {
+                link.addEventListener('click', () => {
+                    // Close mobile nav when a link is clicked
+                    if (navLinks.classList.contains('open')) navLinks.classList.remove('open');
+                });
+            });
+
+            // Active section highlighting
+            const sections = document.querySelectorAll('main section[id]');
+            const sectionObserver = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            const id = entry.target.id;
+                            document.querySelectorAll('.nav-link').forEach((a) => a.classList.remove('active'));
+                            const active = document.querySelector('.nav-link[href="#' + id + '"]');
+                            if (active) active.classList.add('active');
+                        }
+                    });
+                },
+                { threshold: 0.55 }
+            );
+            sections.forEach((s) => sectionObserver.observe(s));
+
+            const revealObserver = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            if (entry.target.classList.contains('about-section')) {
+                                animateStats();
+                            }
+                        }
+                    });
+                },
+                { threshold: 0.3 }
+            );
+
+            revealElements.forEach((el) => revealObserver.observe(el));
+        });
+    </script>
+</body>
+
+</html>
